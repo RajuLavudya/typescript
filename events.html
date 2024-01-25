@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+
+            function submit(){
+                console.log("button clicked")
+            }
+            function cancel(){
+                console.log("cancel clicked")
+            }
+            function typing(){
+                console.log("typing...")
+            }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="submit()">submit</button>
+        <button ondblclick="cancel()">cancel</button>
+        <input type="text" onkeypress="typing()">
+    </body>
+</html>

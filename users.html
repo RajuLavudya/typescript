@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+            var users=[];
+            function submit(){
+                //read
+                var name = document.getElementById('name').value;
+                var year = document.getElementById('year').value;
+                var user= {
+                    name:name,
+                    year:year
+                };
+                users.push(user);
+            console.log(users);
+            }
+            
+            
+        </script>
+    </head>
+
+    <body>
+        
+     
+            <label for="">name</label>
+            <input type="text" id="name">
+            <br>
+            <br>
+
+            <label for="">age</label>
+            <input type="number" id="year">
+            <br>
+            <br>
+
+            <button onclick="submit()">submit</button>
+       
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+            var price=[100,200,300,400,500]
+
+            //console.log(price)
+
+            //map
+           // price=price.map(price=>price+20)
+           // console.log(price)
+
+
+            //filter
+
+            //var result= price.filter(price=>price<=300)
+
+           // var result=price.sort((a,b)=>b-a)
+
+            //reduse
+           // var result=price.reduce((sum,a)=>sum+a)
+           // console.log(result)
+
+            var product=[
+                {name:'pen',price:20},
+                {name:'phone',price:2000},
+                {name:'shirt',price:200000},
+                {name:'laptop',price:205555},
+            ];
+            //map
+           var result=product.map(product=>{
+               product.price=product.price+20;
+                return product;
+            })
+            filter
+           // var result= price.filter(price=>price<=300)
+            
+            var result=price.sort((a,b)=>b.price-a.price)
+            var result=price.sort((a,b)=>b.name.localecompare(a.name))
+
+            //reduse
+
+            var result=price.reduce((sum,a)=>sum+a);
+
+
+            console.log(result)
+
+        </script>
+    </head>
+</html>
